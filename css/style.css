@@ -1,7 +1,7 @@
 /* font colors */
 /* Box sizing rules */
 *,
-*::before,
+*:before,
 *::after {
   box-sizing: border-box;
 }
@@ -123,59 +123,59 @@ h5 {
   }
 }
 
-/*  */
+/* starts here     */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 18px 24px 18px 24px;
 }
-header .header__navbar {
+header .header_navbar {
   display: flex;
   align-items: center;
   width: 100%;
   justify-content: space-evenly;
 }
-header .header__navbar img {
+header .header_navbar img {
   cursor: pointer;
 }
-header .header__navbar .header__navbar__icons {
+header .header_navbar .header_navbar_icons {
   display: flex;
 }
-header .header__navbar .header__navbar__name {
+header .header_navbar .header_navbar_name {
   display: none;
 }
 @media screen and (min-width: 45em) {
-  header .header__navbar {
+  header .header_navbar {
     justify-content: left;
   }
-  header .header__navbar .header__navbar__icons {
+  header .header_navbar .header_navbar_icons {
     display: none;
   }
-  header .header__navbar .header__navbar__name {
+  header .header_navbar .header_navbar_name {
     display: flex;
   }
 }
-header .header__navlink {
+header .nav-linkj {
   display: none;
 }
-header .header__navlink ul {
+header .nav-link ul {
   list-style: none;
 }
-header .header__navlink ul li {
+header .nav-link  ul li {
   display: inline-block;
   padding: 0 8px 0 8px;
 }
-header .header__navlink ul li a {
+header .nav-link  ul li a {
   color: #515151;
   text-decoration: none;
   transition: all 0.3s ease 0s;
 }
-header .header__navlink ul li a:hover {
+header .nav-link ul li a:hover {
   background-color: #d8d8d8;
 }
 @media screen and (min-width: 45em) {
-  header .header__navlink {
+  header .nav-link {
     display: block;
     min-width: fit-content;
   }
@@ -184,7 +184,7 @@ header .header__navlink ul li a:hover {
 footer {
   margin-top: 24px;
 }
-footer .footer__content {
+footer .footer-content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,32 +192,32 @@ footer .footer__content {
   width: 100%;
 }
 @media screen and (min-width: 45em) {
-  footer .footer__content {
+  footer .footer-content {
     justify-content: space-between;
   }
 }
-footer .footer__content__links {
+footer .footer-link {
   display: none;
 }
-footer .footer__content__links ul {
+footer.footer-link  {
   list-style: none;
 }
-footer .footer__content__links ul li {
+footer .footer-link {
   display: inline-block;
   padding: 0 8px 0 8px;
 }
-footer .footer__content__links ul li a {
+footer .footer-link a {
   color: #515151;
   text-decoration: none;
   transition: all 0.3s ease 0s;
 }
 @media screen and (min-width: 45em) {
-  footer .footer__content__links {
+  footer .footer-link {
     display: block;
     min-width: fit-content;
   }
 }
-
+/*  start hereeeeee */
 /* breakpoints */
 .section1 {
   width: 100%;
@@ -253,44 +253,49 @@ footer .footer__content__links ul li a {
   padding: 32px 0 32px 24px;
   display: flex;
 }
-.section2 .mid-left-section2 {
+.section2 .section2-left {
   width: 60%;
 }
-.midsection-container.mid-left-section2 img {
+.section2.section2-left img {
   width: 97%;
 }
-.section2 .mid-left-section2  div {
+.section2 .section2-left  div {
   margin: 32px 24px 0 0;
 }
-.section2 .mid-left-section2  h2 {
+.section2 .section2-left  h2 {
   margin: 32px 24px 0 0;
 }
 
-.mid-right-section2 {
+.section2-right {
   display: flex;
   flex-direction: column;
   width: 40%;
   padding: 0 0 0 16px;
 }
-.mid-right-section2  div {
+
+.section2-right  div {
   display: flex;
   padding: 16px 0 16px 16px;
 }
-.mid-right-section2  div img {
+
+.section2-right div img {
   width: 35%;
   height: auto;
 }
-.mid-right-section2  div div {
+
+.section2-right div div {
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: center;
   row-gap: 10px;
 }
-.mid-right-section2  div div a {
+
+.section2-right div div a {
   text-decoration: none;
 }
-.mid-right-section2  div:hover {
+
+.section2-right div:hover {
   background-color: #d8d8d8;
 }
 
@@ -320,7 +325,7 @@ footer .footer__content__links ul li a {
   background: white;
   padding: 16px 0 0 16px;
 }
-.card-griddiv div h6 {
+.card-grid div div h6 {
   margin: 8px 0 8px 0;
   text-transform: uppercase;
 }
@@ -407,48 +412,48 @@ footer {
 .footer-content h6 {
   float: left;
 }
-.footer-content .footer-links {
+.footer-content .footer-link {
   float: right;
 }
-.footer-content .footer-links ul {
+.footer-content .footer-link ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.footer-content .footer-links ul li {
+.footer-content .footer-link ul li {
   display: inline-block;
   margin: 0 8px 0 8px;
 }
-.footer-content .footer-links ul a {
+.footer-content .footer-link ul a {
   color: #515151;
   text-decoration: none;
 }
-.footer-content .footer-links ul a:hover {
+.footer-content .footer-link ul a:hover {
   color: #8a97a8;
 }
 
 /* media queries */
 @media screen and (max-width: 720px) {
-  .banner-container {
+  .section1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0 0 32px 0;
   }
-  .banner-container img {
+  .section1 img {
     clear: both;
     width: 100%;
     padding-right: 0;
   }
-  .banner-container .cta-container {
+  .section1 .cta-container {
     padding: 32px 16px 32px 16px;
   }
 
-  .midsection-container {
+  .section2 {
     margin: 0;
     padding: 16px 0 32px 16px;
   }
-  .midsection-container .mid-right-container {
+  .section2-right{
     width: 100%;
     padding: 0;
   }
@@ -456,21 +461,21 @@ footer {
     flex-direction: column;
     padding-right: 32px;
   }
-  .midsection-container .mid-right-container div img {
+  .section2 .section2-right div img {
     max-width: 100%;
     max-height: 100%;
     width: 100%;
     object-fit: contain;
   }
 
-  .learning-section-container {
+  .section3 {
     padding: 32px 16px 32px 16px;
     background: white;
     outline: solid;
     outline-width: thin;
   }
 
-  .learning-plain {
+  .section3-plain {
     display: flex;
     flex-direction: column;
   }
@@ -481,19 +486,19 @@ footer {
     padding: 16px 0 24px 16px;
   }
 
-  .thesis-section-container {
+  .section4-grid {
     padding: 0;
   }
 
-  .thesis-exhibit-grid-parent {
+  .section4-grid {
     grid-template-columns: 1fr !important;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
-  .thesis-exhibit-grid-parent .thesis-section-left-container {
+  .section4 .section4-grid .section4-left {
     grid: area 0;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+
